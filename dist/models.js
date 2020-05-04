@@ -40,8 +40,8 @@ var mongodb_1 = require("mongodb");
 var Models = (function () {
     function Models() {
         var _this = this;
-        var dbUrl = 'mongodb://ysha:Woaizhongguo_2020@localhost/mypet';
-        mongodb_1.MongoClient.connect(dbUrl, { useNewUrlParser: true }, function (err, client) {
+        var dbUrl = 'mongodb+srv://ysha:Woaizhongguo%402020@ysha-ieadu.mongodb.net/test?retryWrites=true&w=majority';
+        mongodb_1.MongoClient.connect(dbUrl, { useUnifiedTopology: true }, function (err, client) {
             if (err) {
                 console.error(err);
                 throw err;
